@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'IntroBookAlt';
+    src: url('./fonts/IntroBookAlt/IntroBookAltRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* @import '~antd/dist/antd.css'; */
+
+body {
+    background: rgb(110, 228, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'IntroBookAlt','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
