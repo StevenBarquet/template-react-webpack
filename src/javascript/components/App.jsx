@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from 'Others/data.json';
+import { Link } from 'react-router-dom';
 
 const App = () => {
   const [showList, setShowList] = useState(false);
@@ -10,8 +11,14 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <Link to="/img">
+        <h3>To img --- "react-router"</h3>
+      </Link>
+      <a href="/img">
+        <h3>To img --- "href"</h3>
+      </a>
       <button type="button" onClick={handleclick}>
-        Mapear Loaders
+        Show Loaders
       </button>
       {showList && data.loaders.map(elemento => <div>{elemento.name}</div>)}
     </React.Fragment>
