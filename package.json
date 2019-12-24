@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "develop": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build-dll": "webpack --config ./webpack.dll.config.js",
     "build-production": "webpack --config ./webpack.config.js"
   },
